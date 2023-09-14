@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="icon" href="../images/bolt.png" type="image/png">
+
+  <link rel="stylesheet" href="../css file/login.css">
+  <!-- font owesome link -->
+  <link href="https://fonts.googleapis.com/css2?family=Playball&family=Source+Sans+Pro:wght@600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="login-container">
+        <div class="card-login">
+          <div class="head">
+            <h1>Login In:</h1>
+          </div>
+          <div class="login-input-container">
+            <div class="user-input">
+              <input type="text" id="username-login" placeholder="username or email"
+                pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]*|[a-zA-Z0-9]+" required>
+            </div>
+            <div class="pass-input">
+              <input type="password" id="password-login" placeholder="password" pattern=".{8,}" required>
+            </div>
+          </div>
+          <p id="result"></p>
+          
+          <div class="btn">
+            <button id="login-btn" class="button-bk">login</button>
+          </div>
+          <p id="message-or">Or login with</p>
+          <div class="website-opt">
+            <a href="www.google.com">
+              <img id="img-google" src="../images/googlesvg2.png" alt="google svg">
+            </a>
+            <a href="www.facebook.com">
+              <img id="img-facebook" src="../images/facebooksvg-3.svg" alt="facebook svg">
+            </a>
+          </div>
+          <p>Create Account!
+            <a href="../html file/register.html">Register</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script type="module" src="../script.js"></script>
+  <script  type="module" src="../js file/login.js"></script>
+</body>
+
+</html>
+
